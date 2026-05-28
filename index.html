@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politique de confidentialité - Edelpass</title>
+    <meta
+      name="description"
+      content="Politique de confidentialité de l'application mobile Edelpass, publiée par Vinea Labs."
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --background: #f5f7f6;
+        --surface: #ffffff;
+        --surface-soft: #eef2f1;
+        --text: #20231f;
+        --muted: #62675f;
+        --border: #d9dfdc;
+        --accent: #2f5d50;
+        --accent-soft: #e1eee9;
+        --heading: #183a33;
+        --shadow: 0 20px 55px rgba(31, 37, 35, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(180deg, rgba(225, 238, 233, 0.72), rgba(247, 244, 238, 0) 360px),
+          var(--background);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.68;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+      }
+
+      .page {
+        width: min(100%, 980px);
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
+
+      header {
+        padding: 28px 0 26px;
+      }
+
+      .brand {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 22px;
+      }
+
+      .brand-logo {
+        display: block;
+        width: 44px;
+        height: 44px;
+        flex: 0 0 auto;
+        color: var(--heading);
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+      }
+
+      .brand-name {
+        color: var(--heading);
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+
+      .brand-meta {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--heading);
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 12px;
+        font-size: 3.45rem;
+      }
+
+      h2 {
+        margin: 0 0 18px;
+        padding-top: 8px;
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        margin: 26px 0 8px;
+        font-size: 1.08rem;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      .lead {
+        max-width: 780px;
+        color: #3b433e;
+        font-size: 1.08rem;
+      }
+
+      .updated {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        margin-top: 18px;
+        padding: 6px 12px;
+        border: 1px solid rgba(47, 93, 80, 0.18);
+        border-radius: 8px;
+        background: var(--accent-soft);
+        color: var(--heading);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      nav {
+        margin: 18px 0 34px;
+        padding: 22px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      nav h2 {
+        margin-bottom: 14px;
+        padding: 0;
+        font-size: 1.05rem;
+      }
+
+      nav ol {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 22px;
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      nav a {
+        color: var(--text);
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      main {
+        display: grid;
+        gap: 0;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      section {
+        padding: 30px;
+        border-bottom: 1px solid var(--border);
+        background: transparent;
+      }
+
+      section:last-child {
+        border-bottom: 0;
+      }
+
+      ul {
+        margin: 0 0 18px;
+        padding-left: 21px;
+      }
+
+      li {
+        margin: 9px 0;
+      }
+
+      strong {
+        color: #1f2925;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .info-item {
+        min-width: 0;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface-soft);
+      }
+
+      .info-label {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--muted);
+        font-size: 0.83rem;
+        font-weight: 750;
+        text-transform: uppercase;
+      }
+
+      .notice {
+        margin-top: 18px;
+        padding: 16px;
+        border-left: 4px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent-soft);
+        color: #263c35;
+      }
+
+      footer {
+        padding: 34px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        text-align: center;
+      }
+
+      @media (max-width: 720px) {
+        .page {
+          padding: 24px 14px 44px;
+        }
+
+        header {
+          padding-top: 18px;
+        }
+
+        h1 {
+          font-size: 2.35rem;
+        }
+
+        h2 {
+          font-size: 1.45rem;
+        }
+
+        nav,
+        section {
+          padding: 20px;
+        }
+
+        nav ol,
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand" aria-label="Edelpass">
+          <svg class="brand-logo" viewBox="0 0 1024 1024" aria-hidden="true">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M360.278 493.3L269.285 472.77C267.124 485.888 266 499.355 266 513.086C266 602.068 313.211 680.02 383.943 723.242C383.559 677.105 421.939 638.374 468.061 638.374C514.519 638.374 552.181 676.049 552.181 722.524C552.181 734.808 549.55 746.478 544.82 757C566.022 754.172 586.369 748.643 605.506 740.77L648.294 581.03H707.097H748.504C754.688 559.45 758 536.654 758 513.086C758 377.176 647.862 267 512 267C407.484 267 318.191 332.202 282.551 424.162C327.39 376.691 390.91 347.064 461.348 347.053L461.376 347.053H461.381H461.39C481.373 347.055 500.089 352.485 516.144 361.95C534.916 373.016 550.05 389.596 559.321 409.465H492.255C492.042 442.296 519.378 469.821 552.195 469.821C557.922 469.821 563.46 469.018 568.705 467.518C562.558 521.365 516.85 563.192 461.376 563.192C415.147 563.192 375.699 534.145 360.278 493.3ZM635.964 407.451C649.124 407.451 659.791 418.123 659.791 431.287C659.791 444.451 649.124 455.123 635.964 455.123C622.805 455.123 612.137 444.451 612.137 431.287C612.137 416.987 623.153 407.451 635.964 407.451Z"
+            />
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">Edelpass</span>
+            <span class="brand-meta">Application mobile publiée par Vinea Labs</span>
+          </div>
+        </div>
+
+        <h1>Politique de confidentialité</h1>
+        <p class="lead">
+          Cette politique explique comment Vinea Labs collecte, utilise, protège
+          et partage les données personnelles lorsque tu utilises l'application
+          mobile Edelpass.
+        </p>
+        <p class="updated">Dernière mise à jour : 28 mai 2026</p>
+      </header>
+
+      <nav aria-label="Sommaire">
+        <h2>Sommaire</h2>
+        <ol>
+          <li><a href="#editeur">Éditeur et contact</a></li>
+          <li><a href="#champ">Champ d'application</a></li>
+          <li><a href="#donnees">Données traitées</a></li>
+          <li><a href="#utilisation">Utilisation des données</a></li>
+          <li><a href="#partage">Partage avec des tiers</a></li>
+          <li><a href="#securite">Sécurité</a></li>
+          <li><a href="#conservation">Conservation et suppression</a></li>
+          <li><a href="#droits">Tes droits</a></li>
+          <li><a href="#mineurs">Protection des mineurs</a></li>
+          <li><a href="#modifications">Modifications de cette politique</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <main>
+        <section id="editeur">
+          <h2>1. Éditeur et contact</h2>
+          <p>
+            L'application mobile Edelpass est publiée par Vinea Labs. La
+            protection de tes données personnelles est une priorité pour nous.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label">Application</span>
+              Edelpass
+            </div>
+            <div class="info-item">
+              <span class="info-label">Éditeur</span>
+              Vinea Labs
+            </div>
+            <div class="info-item">
+              <span class="info-label">Localité</span>
+              Gilly, canton de Vaud, Suisse
+            </div>
+            <div class="info-item">
+              <span class="info-label">Statut</span>
+              Développeur indépendant
+            </div>
+            <div class="info-item">
+              <span class="info-label">Contact confidentialité</span>
+              <a href="mailto:vinealabs@gmail.com">vinealabs@gmail.com</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="champ">
+          <h2>2. Champ d'application</h2>
+          <p>
+            Cette politique s'applique à l'utilisation de l'application mobile
+            Edelpass, y compris les fonctionnalités de compte, de passeport
+            numérique, de tampon GPS, de radar des cabanes, de notifications, de
+            contribution communautaire et de contact avec l'éditeur.
+          </p>
+          <p>
+            Edelpass est conçue en conformité avec la Loi fédérale suisse sur la
+            protection des données (LPD) et s'inspire des principes du RGPD
+            européen : transparence, minimisation des données, sécurité,
+            limitation des finalités et droit à la suppression.
+          </p>
+        </section>
+
+        <section id="donnees">
+          <h2>3. Données que nous collectons, consultons ou utilisons</h2>
+
+          <h3>Données de compte et d'authentification</h3>
+          <p>
+            Lors de ton inscription ou de ta connexion, Edelpass peut traiter ton
+            adresse e-mail, ton pseudo, ton identifiant utilisateur Firebase
+            (UID), la date de création du compte et, en cas de connexion avec
+            Google, certaines informations de base fournies par Google pour
+            créer ou retrouver ton compte. Les mots de passe sont gérés par
+            Firebase Authentication ; Vinea Labs n'a pas accès à ton mot de
+            passe en clair.
+          </p>
+
+          <h3>Données de profil et de progression</h3>
+          <p>
+            Pour faire fonctionner le passeport numérique, Edelpass enregistre
+            des informations comme les cabanes visitées, les dates de tampon,
+            les notes associées à une visite, le nombre de tampons, le niveau,
+            le dénivelé total, les contributions et les préférences du compte,
+            par exemple l'activation des notifications.
+          </p>
+
+          <h3>Données de localisation GPS</h3>
+          <p>
+            Edelpass demande l'accès à ta position GPS précise pour vérifier ta
+            proximité avec une cabane lorsque tu veux tamponner ton passeport.
+            Si tu actives le radar des cabanes, l'application peut aussi utiliser
+            la localisation en arrière-plan afin de détecter les cabanes proches
+            et t'envoyer une notification, même lorsque l'application est fermée
+            ou n'est pas utilisée.
+          </p>
+          <p>
+            La localisation sert à calculer une distance avec les cabanes. Elle
+            n'est pas partagée avec d'autres utilisateurs et Edelpass ne conserve
+            pas d'historique continu de tes déplacements.
+          </p>
+
+          <h3>Contenus générés par l'utilisateur</h3>
+          <p>
+            Si tu contactes Vinea Labs, signales un problème ou proposes une
+            modification pour une cabane, nous pouvons enregistrer les contenus
+            transmis : texte, coordonnées, correction d'information, photo,
+            adresse e-mail associée à la demande et identifiant utilisateur.
+          </p>
+
+          <h3>Photos, galerie et appareil photo</h3>
+          <p>
+            Si tu proposes une photo pour une cabane, Edelpass peut demander
+            l'accès à ta galerie ou à l'appareil photo. L'image est envoyée à
+            nos serveurs uniquement après une action volontaire de ta part, par
+            exemple lorsque tu appuies sur le bouton d'envoi. Les images trop
+            lourdes peuvent être compressées localement sur ton appareil avant
+            l'envoi.
+          </p>
+
+          <h3>Notifications</h3>
+          <p>
+            Pour envoyer des notifications, Edelpass peut enregistrer un jeton
+            Firebase Cloud Messaging (FCM), la date de mise à jour de ce jeton
+            et tes préférences de notification.
+          </p>
+
+          <h3>Données techniques, d'utilisation et de diagnostic</h3>
+          <p>
+            Edelpass utilise Firebase Analytics et Firebase Crashlytics afin de
+            comprendre l'utilisation générale de l'application, surveiller sa
+            stabilité et corriger les erreurs. Ces services peuvent traiter des
+            informations techniques comme le modèle de l'appareil, la version du
+            système d'exploitation, des identifiants d'installation, l'adresse IP
+            traitée par les services Google, les événements d'utilisation et
+            l'état de l'application lors d'un plantage.
+          </p>
+
+          <h3>Achats intégrés et publicité</h3>
+          <p>
+            Si Edelpass propose des achats intégrés, les transactions
+            financières sont gérées par Google Play ou Apple App Store. Vinea
+            Labs n'a jamais accès à tes données bancaires. Si des publicités
+            sont activées dans une version future, les partenaires publicitaires
+            pourront traiter des identifiants publicitaires ou données
+            techniques conformément à leurs propres règles et aux autorisations
+            disponibles sur ton appareil.
+          </p>
+        </section>
+
+        <section id="utilisation">
+          <h2>4. Comment nous utilisons les données</h2>
+          <p>Les données sont utilisées uniquement pour les finalités suivantes :</p>
+          <ul>
+            <li>créer, protéger et gérer ton compte Edelpass ;</li>
+            <li>permettre le fonctionnement du passeport numérique et des tampons ;</li>
+            <li>calculer ta proximité avec les cabanes lorsque la fonctionnalité GPS est utilisée ;</li>
+            <li>envoyer des notifications liées aux cabanes, aux messages ou aux fonctionnalités de l'application ;</li>
+            <li>traiter tes demandes de contact, corrections, suggestions et contributions ;</li>
+            <li>améliorer Edelpass, analyser son usage global, corriger les bugs et prévenir les abus ;</li>
+            <li>respecter nos obligations légales, protéger nos droits et assurer la sécurité du service.</li>
+          </ul>
+        </section>
+
+        <section id="partage">
+          <h2>5. Partage de tes données avec des tiers</h2>
+          <p>
+            Vinea Labs ne vend pas tes données personnelles. Nous partageons ou
+            faisons traiter certaines données uniquement avec des prestataires
+            nécessaires au fonctionnement d'Edelpass.
+          </p>
+          <ul>
+            <li>
+              <strong>Google Firebase et Google Cloud :</strong>
+              authentification, base de données Firestore, stockage des images,
+              fonctions serveur, notifications Cloud Messaging, Analytics et
+              Crashlytics.
+            </li>
+            <li>
+              <strong>Google Sign-In :</strong>
+              connexion au compte lorsque tu choisis l'authentification avec
+              Google.
+            </li>
+            <li>
+              <strong>Google Play et Apple App Store :</strong>
+              gestion des transactions d'achats intégrés, le cas échéant.
+            </li>
+            <li>
+              <strong>Partenaires publicitaires :</strong>
+              uniquement si des publicités sont activées dans l'application.
+            </li>
+          </ul>
+          <p>
+            Ces prestataires peuvent traiter des données dans des pays différents
+            de ton pays de résidence. Nous nous appuyons sur leurs engagements de
+            sécurité et de conformité pour protéger les données traitées.
+          </p>
+        </section>
+
+        <section id="securite">
+          <h2>6. Sécurité des données</h2>
+          <p>
+            Tes données sont stockées sur l'infrastructure Google Firebase et
+            Google Cloud. Nous utilisons des mesures de sécurité conformes aux
+            pratiques du secteur, notamment les contrôles d'accès, les règles de
+            sécurité Firebase, l'authentification utilisateur et le chiffrement
+            des communications lorsque les données transitent entre
+            l'application et les services utilisés.
+          </p>
+          <p>
+            Aucun système n'est absolument invulnérable, mais nous limitons la
+            collecte aux données utiles au service et nous prenons des mesures
+            raisonnables pour éviter l'accès non autorisé, la perte, l'altération
+            ou la divulgation abusive des données.
+          </p>
+        </section>
+
+        <section id="conservation">
+          <h2>7. Conservation et suppression des données</h2>
+          <p>
+            Les données de compte, de progression et de préférences sont
+            conservées tant que ton compte Edelpass reste actif ou tant qu'elles
+            sont nécessaires au fonctionnement du service. Les données de
+            diagnostic, de support et de sécurité sont conservées pendant une
+            durée limitée, selon les besoins techniques, opérationnels et légaux.
+          </p>
+          <p>
+            Tu peux demander la suppression définitive de ton compte directement
+            dans l'application via <strong>Profil &gt; Supprimer mon compte</strong>
+            ou en nous contactant à
+            <a href="mailto:vinealabs@gmail.com">vinealabs@gmail.com</a>.
+          </p>
+          <p>
+            Lorsqu'un compte est supprimé, le compte Firebase Authentication et
+            le document utilisateur associé sont supprimés. Les messages,
+            demandes de contact et suggestions liés au compte sont anonymisés
+            lorsque cela est nécessaire. Les contributions publiques utiles à la
+            communauté, par exemple certaines suggestions concernant les cabanes,
+            peuvent être conservées sous forme anonymisée.
+          </p>
+          <div class="notice">
+            Pour une demande de suppression hors application, indique l'adresse
+            e-mail associée au compte Edelpass afin que nous puissions identifier
+            la demande.
+          </div>
+        </section>
+
+        <section id="droits">
+          <h2>8. Tes droits</h2>
+          <p>
+            Conformément au droit applicable, tu peux demander l'accès à tes
+            données personnelles, leur rectification, leur suppression, la
+            limitation de leur traitement ou t'opposer à certains traitements
+            lorsque la loi le prévoit.
+          </p>
+          <p>
+            Tu peux exercer ces droits depuis les fonctionnalités disponibles
+            dans l'application ou en envoyant une demande à
+            <a href="mailto:vinealabs@gmail.com">vinealabs@gmail.com</a>.
+          </p>
+        </section>
+
+        <section id="mineurs">
+          <h2>9. Protection des mineurs</h2>
+          <p>
+            Edelpass ne s'adresse pas aux personnes de moins de 13 ans. Nous ne
+            collectons pas sciemment de données personnelles concernant des
+            enfants de moins de 13 ans. Si nous découvrons qu'un enfant de moins
+            de 13 ans nous a transmis des données personnelles, nous prendrons
+            les mesures nécessaires pour les supprimer.
+          </p>
+        </section>
+
+        <section id="modifications">
+          <h2>10. Modifications de cette politique</h2>
+          <p>
+            Cette politique de confidentialité peut être mise à jour afin de
+            refléter l'évolution de l'application, des services utilisés ou des
+            obligations légales. La date de dernière mise à jour indiquée en haut
+            de la page permet d'identifier la version applicable.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>11. Nous contacter</h2>
+          <p>
+            Pour toute question concernant cette politique de confidentialité,
+            l'utilisation de tes données ou l'exercice de tes droits, contacte
+            Vinea Labs à l'adresse suivante :
+            <a href="mailto:vinealabs@gmail.com">vinealabs@gmail.com</a>.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Vinea Labs. Edelpass.</p>
+      </footer>
+    </div>
+  </body>
+</html>
